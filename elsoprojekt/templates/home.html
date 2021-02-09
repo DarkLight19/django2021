@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <p>
+        {% if a > 100 %}
+            <span style="color:red">Az a változó értéke : {{ a }}</span>
+        {% else %}
+        <span style="color:green">Az a változó értéke : {{ a }}</span>
+        {% endif %} 
+    </p>
+    <p>
+        A b változó értéke {{ b }}.
+    </p>
+    <p>
+        Az l változó értéke {{ l }}.
+    </p>
+    <ul>
+        {% for i in l %}
+            <li>
+                ez itt a szám: {{ i }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

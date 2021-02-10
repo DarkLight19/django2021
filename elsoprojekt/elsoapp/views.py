@@ -7,6 +7,7 @@ def home_view(request, *args, **kwargs):
     "a": 123,
     "b": "blablabla",
     "l": [1,3,5,7,9],
+    "Tanulok": Tanulok,
     }
     print(f"Akontextus a. eleme: {kontextus['a']}")
     return render(request, "home.html", kontextus)

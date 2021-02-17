@@ -1,12 +1,30 @@
 header{
     background-color : red;
 }
-
 header, footer{
-    text-align: center;
+    text-align : center;
 }
 
 main{
+    
+
+}
+
+.grid-container{
     display: grid;
     justify-content: center;
+    
+    grid-template-columns: 10em 8em;
+    grid-template-rows: 2em 2em 2em 2em;
+
+    gap : 5px;
+}
+
+.grid-container button{
+    grid-column-start: 2;
+    grid-column-end: five;
+}
+
+.grid-label{
+    justify-self: end;
 }

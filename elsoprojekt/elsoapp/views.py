@@ -17,5 +17,6 @@ def home_view(request, *args, **kwargs):
     return render(request, "home.html", kontextus)
 
 def tesijel(request):
-    kontextus = {}
+    foglalkozasnevek = Foglalkozas.objects.all()
+    kontextus = {"foglalkozasok": Foglalkozas.objects.all()}
     return render(request, "tesi.html", kontextus)

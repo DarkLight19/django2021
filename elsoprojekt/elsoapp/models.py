@@ -28,4 +28,4 @@ class Valasztas(models.Model):
     foglalkozas = models.ForeignKey(Foglalkozas, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.tanulo.nev} - {self.foglalkozas}"
+        return f"{self.tanulo.nev} - {self.foglalkozas.nev}"
